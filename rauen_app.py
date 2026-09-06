@@ -73,7 +73,7 @@ def main():
 
     # Definition BMI
     bmi_order = [0, 1, 2]
-    bmi_labels = ["Normalgewichtig", "Übergewichtig", "Adipös"]
+    bmi_labels = ["Normalgew.", "Übergew.", "Adipös"]
     bmi_colors = ["green", "orange", "red"]
 
     # Feature engineering
@@ -160,11 +160,11 @@ def main():
         return f"{feature_labels_de[key]} ({unit})" if unit else feature_labels_de[key]
     
     # Tabs
-    tab1, tab2, tab3, tab4 = st.tabs(["📊 Übersicht", "🔍 Analyse", "🤖 ML-Modell", "📁 Daten upload"])
+    tab1, tab2, tab3, tab4 = st.tabs(["📊 Übersicht", "🔍 Analyse", "🤖 ML-Modell", "📁 Daten-Upload"])
 
     with tab1:
         st.subheader("Gefilterte Daten")
-        st.write(f"Zeige **{len(filtered_df)}** von {len(df)} Patienten, **{filtered_df.shape[1]}** von {df.shape[1]} Features")
+        st.write(f"Zeige **{len(filtered_df)}** von {len(df)} Patienten")
 
         # Metrics
         col1, col2, col3 = st.columns(3)
