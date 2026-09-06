@@ -1,0 +1,23 @@
+#Dokumentation
+Dokumentation/
+
+# Ursprüngliche Projektidee
+Projekt Idee/
+
+#Präsentation
+Präsentation/
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Windows-spezifisch
+Thumbs.db
+desktop.ini
+
+# Editor-/IDE-Dateien
+.vscode/
+.idea/
